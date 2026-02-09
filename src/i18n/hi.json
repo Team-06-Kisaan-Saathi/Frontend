@@ -66,7 +66,30 @@
     "edit_profile": "प्रोफ़ाइल संपादित करें",
     "edit_preferences": "पसंद संपादित करें",
     "logout": "लॉग आउट"
-  }
+  } , 
+
+  "buyer": {
+  "buyerDashboard": "खरीदार डैशबोर्ड",
+  "buyerDesc": "फसलों को खोजें, कीमतों की तुलना करें और भरोसे के साथ बोली लगाएं",
+
+  "marketplace": "मार्केटप्लेस",
+  "marketplaceDesc": "सत्यापित किसानों की फसलें देखें",
+
+  "liveAuctions": "लाइव नीलामी",
+  "liveAuctionsDesc": "रियल-टाइम फसल नीलामी में भाग लें",
+
+  "myBids": "मेरी बोलियां",
+  "myBidsDesc": "सक्रिय और पिछली बोलियों को ट्रैक करें",
+
+  "marketInsights": "बाज़ार विश्लेषण",
+  "marketInsightsDesc": "कीमतों और रुझानों की तुलना करें",
+
+  "trustedFarmers": "विश्वसनीय किसान",
+  "trustedFarmersDesc": "सत्यापित किसानों से खरीदें"
+}
+
+
+  
 
 
 

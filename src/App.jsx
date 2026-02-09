@@ -1,36 +1,48 @@
-
-import Login from "./components/Login"
-import Roleselection from "./components/Roleselection"
-import Signup from "./components/Signup"
-import Verify from "./components/Verify"
+import Login from "./components/Login";
+import Roleselection from "./components/Roleselection";
+import Signup from "./components/Signup";
+import Verify from "./components/Verify";
 import FarmerDashboard from "./components/Farmerdashboard";
 import CropListingForm from "./components/CropListingForm";
 import FarmerPreferences from "./components/FarmerPreferences";
-import ReactDOM from 'react-dom/client'; // Use createRoot for React 18+
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
+import BuyerDashboard from "./components/BuyerDashboard";
 import VoiceNav from "./components/VoiceNav";
 import Accessibility from "./components/Accessibility";
 
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
-
   return (
-    <>
-      <BrowserRouter>
-      <VoiceNav/>
-      <Accessibility/>
-        <Routes>
-          <Route path="/" element={<Login/>}></Route>
-          <Route path="/Signup" element={<Signup/>}></Route>
-          <Route path="/Verify" element={<Verify/>}></Route>
-          <Route path="/Farmer-preferences" element={<FarmerPreferences/>}></Route>
-          <Route path="/Farmer-dashboard" element={<FarmerDashboard/>}></Route>
-          <Route path="/add-crop" element={<CropListingForm />} />
+    <BrowserRouter>
+      <VoiceNav />
+      <Accessibility />
 
-  
-        </Routes>
-      </BrowserRouter>
-    </>
-  )
+      <Routes>
+        {/* Auth Routes */}
+        <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/verify" element={<Verify />} />
+
+        {/* Farmer Routes */}
+        <Route path="/farmer-preferences" element={<FarmerPreferences />} />
+        <Route path="/farmer-dashboard" element={<FarmerDashboard />} />
+        <Route path="/add-crop" element={<CropListingForm />} />
+
+        {/* Buyer Route */}
+        <Route path="/buyer-dashboard" element={<BuyerDashboard />} />
+        {/* Buyer Routes */}
+<Route path="/buyer-dashboard" element={<BuyerDashboard />} />
+
+<Route path="/marketplace" element={<div>Marketplace Page</div>} />
+<Route path="/buyer-live-auctions" element={<div>Buyer Live Auctions</div>} />
+<Route path="/buyer-bids" element={<div>My Bids Page</div>} />
+<Route path="/market-insights" element={<div>Market Insights</div>} />
+<Route path="/trusted-farmers" element={<div>Trusted Farmers</div>} />
+
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
