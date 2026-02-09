@@ -66,6 +66,28 @@
     "edit_profile": "Edit Profile",
     "edit_preferences": "Edit Preferences",
     "logout": "Logout"
-  }
+  } ,
+
+  "buyer": {
+  "buyerDashboard": "Buyer Dashboard",
+  "buyerDesc": "Discover crops, compare prices, and bid with confidence",
+
+  "marketplace": "Marketplace",
+  "marketplaceDesc": "Browse available crops from verified farmers",
+
+  "liveAuctions": "Live Auctions",
+  "liveAuctionsDesc": "Participate in real-time crop bidding",
+
+  "myBids": "My Bids",
+  "myBidsDesc": "Track your active and past bids",
+
+  "marketInsights": "Market Insights",
+  "marketInsightsDesc": "Compare prices and market trends",
+
+  "trustedFarmers": "Trusted Farmers",
+  "trustedFarmersDesc": "Buy from verified farmer profiles"
+}
+
+  
 
 }
